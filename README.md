@@ -1,6 +1,6 @@
 # Portfolio - Focal X
 
-This is a portfolio website project that is affiliated with [Focal X](https://focal-x.com/) company, this project is built with vite web bundler
+This is a portfolio website project that is affiliated with __Focal X__ company, this project is built with vite web bundler
 
 ---
 
