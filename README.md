@@ -11,11 +11,6 @@ to run the project in development mode:
     npm run dev
 ```
 
-to watch changs for tailwind css style library:
-```bash
-    npm run watch
-```
-
 to build the project for production mode:
 ```bash
     npm run build
