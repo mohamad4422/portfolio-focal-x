@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite ./src",
     "build": "vite build ./src",
     "preview": "vite preview ./src",
     "watch": "tailwindcss -i ./src/input.css -o ./src/css/output.css --watch"
@@ -14,5 +14,8 @@
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.3"
   }
 }
