@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Portfoio | Alaa Darwish</title>
-  </head>
-  <body>
-    <!-- start home section -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- start styles -->
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/home-section-style.css" />
+		<link rel="stylesheet" href="/css/lets-talk-section-style.css" />
+		<!-- end styles -->
+
+		<title>Portfolio | Alaa Darwish</title>
+	</head>
+	<body>
+		<!-- start home section -->
 		<section id="home-section" class="home-section">
 			<img src="./imgs/white-logo.png" alt="logo img" class="home-logo-img" />
 			<h1 class="home-h1">I&CloseCurlyQuote;m Alaa Darwish</h1>
@@ -55,81 +60,82 @@
 			<img src="./imgs/scroll.png" class="home-scroll-img" alt="scroll img" />
 		</section>
 		<!-- end home section -->
-    
-    <!--Start Let's Talk section-->
-    <section id="lets-talk-section" class="bh-talkSection">
-      <div class="top-section">
-        <h3 class="subtitle1">+Let's collaborate</h3>
-        <h1 class="title">Let’s talk</h1>
-        <h6 class="subtitle2">What’s in your mind ?</h6>
-        <div class="paragraph-container">
-          <p class="paragraph">
-            let’s make something new, different and more meaningful or make thing 
-            more visual or conceptual ! 
-          </p>
-        </div>
-       </div>
 
-        <!--Start contact box-->
-        <div class="contact-box">
-          <form>
-            <div class="your-info">
-              <div class="input-box">
-                <label>Your Name</label>
-                <input type="text" />
-              </div>
-              <div class="input-box">
-                <label>Your Email</label>
-                <input type="email" />
-              </div>
-            </div>
+		<!-- start let's talk section -->
+		<section id="lets-talk-section" class="bh-talk-section">
+			<div class="top-section">
+				<h3 class="subtitle">+Let's collaborate</h3>
+				<h2 class="title">Let&CloseCurlyQuote;s talk</h2>
+			</div>
+			<div class="contact-box">
+				<form>
+					<div class="your-info">
+						<div class="input-box">
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Your Name"
+							/>
+						</div>
+						<div class="input-box">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="E-mail"
+							/>
+						</div>
+					</div>
+					<div class="message-box">
+            <h6>
+              What&CloseCurlyQuote;s in your mind ?
+            </h6>
+						<textarea
+              placeholder="let&CloseCurlyQuote;s make something new, different and more meaningful or make thing more visual or conceptual !"
+							name="message"
+							id="message"
+						></textarea>
+					</div>
+					<div class="bottom-row">
+						<button class="submit-btn" type="submit">Send</button>
+						<ul class="social-list">
+							<li class="list-item">
+								<p class="list-item-para">Keep in touch</p>
+							</li>
+							<li class="list-item">
+								<a href="#">
+									<img src="/imgs/social/Facebook.png" alt="facebook" />
+								</a>
+							</li>
+							<li class="list-item">
+								<a href="#">
+									<img src="/imgs/social/Behance.png" alt="Behance" />
+								</a>
+							</li>
+							<li class="list-item">
+								<a href="#">
+									<img src="/imgs/social/Youtube.png" alt="youtube" />
+								</a>
+							</li>
+							<li class="list-item">
+								<a href="#">
+									<img src="/imgs/social/Instagram.png" alt="instagram" />
+								</a>
+							</li>
+							<li class="list-item">
+								<a href="#">
+									<img src="/imgs/social/LinkedIn.png" alt="LinkedIn" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- end let's talk section -->
 
-            <div class="message-box">
-              <label>Your Message</label>
-              <input type="textarea" />
-            </div>
-            <div class="message-box-sm">
-              <input type="textarea" />
-              <div class="placeholder-box">
-                <h6 class="first-placeholder">What’s in your mind ?</h6>
-                <p class="second-placeholder">
-                  let’s make something new, different and more meaningful or make thing 
-                  more visual or conceptual ! 
-                </p>
-              </div>
-            </div>
-            <button class="submit-btn" type="submit">Send</button>
-          </form>
-        </div>
-        <!--End contact box-->
-        <!-- Start Social-media -->
-       <div class="social-box">
-          <ul class="social-list">
-            <li class="list-item">
-              <p class="list-item-para">Keep in touch</p>
-            </li>
-            <li class="list-item">
-              <a href="#"> <img src="/imgs/social/Facebook.png" alt="facebook"> </a>
-            </li>
-            <li class="list-item">
-              <a href="#"> <img src="/imgs/social/Behance.png" alt="Behance"> </a>
-            </li>
-            <li class="list-item">
-              <a href="#"> <img src="/imgs/social/youtube.png" alt="youtube"> </a>
-            </li>
-            <li class="list-item">
-              <a href="#"> <img src="/imgs/social/instagram.png" alt="instagram"> </a>
-            </li>
-            <li class="list-item">
-              <a href="#"> <img src="/imgs/social/LinkedIn.png" alt="LinkedIn"> </a>
-            </li>
-          </ul>
-         </div>
-      <!-- End Social-media -->
-    </section>
-    <!--End Let's Talk section-->
-
-
-    <script type="module" src="/js/main.js"></script>
-  </body>
+		<script type="module" src="/js/main.js"></script>
+		<script type="module" src="/js/lets-talk-section-script.js"></script>
+	</body>
 </html>
