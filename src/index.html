@@ -5,14 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="./css/achievement.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Portfoio | Alaa Darwish</title>
   </head>
   <body class="bg-background scroll-smooth font-inter">
     <!-- Achievements Start -->
-    <section class="achievements"></section>
+    <section class="achievements-section">
+      <div class="achievements__title">Achievement</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper achievements">
+          <div class="achievement-box swiper-slide">
+            <div class="achievement__header">
+              <div class="achievement__date">1 April 2022</div>
+              <div class="achievement__title">
+                founder & CEO at focal X agency
+              </div>
+            </div>
+            <div class="achievement__body">
+              focal X agency announces its advertising sponsorship of the 3rd
+              International Expo of Plastic Industries, PLASTex , also
+              officially sponsored by the Ministry of Industry in the Syrian
+              Arab Republic, with wide local and international participation.
+              <a href="#" class="full__achievement">read more</a>
+            </div>
+          </div>
+          <div class="achievement-box swiper-slide">
+            <div class="achievement__header">
+              <div class="achievement__date">1 April 2022</div>
+              <div class="achievement__title">
+                founder & CEO at focal X agency
+              </div>
+            </div>
+            <div class="achievement__body">
+              focal X agency announces its advertising sponsorship of the 3rd
+              International Expo of Plastic Industries, PLASTex , also
+              officially sponsored by the Ministry of Industry in the Syrian
+              Arab Republic, with wide local and international participation.
+              <a href="#" class="full__achievement">read more</a>
+            </div>
+          </div>
+          <div class="achievement-box swiper-slide">
+            <div class="achievement__header">
+              <div class="achievement__date">1 April 2022</div>
+              <div class="achievement__title">
+                founder & CEO at focal X agency
+              </div>
+            </div>
+            <div class="achievement__body">
+              focal X agency announces its advertising sponsorship of the 3rd
+              International Expo of Plastic Industries, PLASTex , also
+              officially sponsored by the Ministry of Industry in the Syrian
+              Arab Republic, with wide local and international participation.
+              <a href="#" class="full__achievement">read more</a>
+            </div>
+          </div>
+          <div class="achievement-box swiper-slide">
+            <div class="achievement__header">
+              <div class="achievement__date">1 April 2022</div>
+              <div class="achievement__title">
+                founder & CEO at focal X agency
+              </div>
+            </div>
+            <div class="achievement__body">
+              focal X agency announces its advertising sponsorship of the 3rd
+              International Expo of Plastic Industries, PLASTex , also
+              officially sponsored by the Ministry of Industry in the Syrian
+              Arab Republic, with wide local and international participation.
+              <a href="#" class="full__achievement">read more</a>
+            </div>
+          </div>
+          <div class="achievement-box swiper-slide">
+            <div class="achievement__header">
+              <div class="achievement__date">1 April 2022</div>
+              <div class="achievement__title">
+                founder & CEO at focal X agency
+              </div>
+            </div>
+            <div class="achievement__body">
+              focal X agency announces its advertising sponsorship of the 3rd
+              International Expo of Plastic Industries, PLASTex , also
+              officially sponsored by the Ministry of Industry in the Syrian
+              Arab Republic, with wide local and international participation.
+              <a href="#" class="full__achievement">read more</a>
+            </div>
+          </div>
+          <div class="achievement-box swiper-slide">
+            <div class="achievement__header">
+              <div class="achievement__date">1 April 2022</div>
+              <div class="achievement__title">
+                founder & CEO at focal X agency
+              </div>
+            </div>
+            <div class="achievement__body">
+              focal X agency announces its advertising sponsorship of the 3rd
+              International Expo of Plastic Industries, PLASTex , also
+              officially sponsored by the Ministry of Industry in the Syrian
+              Arab Republic, with wide local and international participation.
+              <a href="#" class="full__achievement">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
     <!-- Achievements End -->
 
     <script type="module" src="/js/main.js"></script>
-    <script src="./js/achievement.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
+    <!-- <script src="./js/achievement.js"></script> -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        // centeredSlides: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
