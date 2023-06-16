@@ -1,9 +1,9 @@
+/* Start Experience Section */
 .main-heading::before {
     content: "+10 Years" !important;
 } 
 
 .Experience {
-    /* padding-top: 70px; */
     background-image: url(./../imgs/background-2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     text-decoration: underline;
     font-weight: var(--fw-base);
     font-size: 1.6rem;
-    /* line-height: 19.36px; */
+    line-height: 19.36px;
 }
 
 
@@ -61,6 +61,8 @@
     } 
     .Experience .card .Exp-info p {
         font-size: 1.3rem;
-        
+
     }
 }
+
+/* End Experience Section */
