@@ -12,7 +12,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.0.3",
-    "swiper": "^9.4.0"
+    "@fontsource/inter": "^5.0.3"
   }
 }

@@ -37,7 +37,6 @@
   scroll-behavior: smooth;
   list-style: none;
   font-family: var(--font-family);
-  font-size: 62.5%;
 }
 
 body {
@@ -54,38 +53,36 @@ body {
 
 .main-heading {
   position: relative;
-  font-size: 4.5rem;
+  font-size: 45px;
   font-weight: var(--fw-bold);
   text-align: center;
   text-transform: capitalize;
   line-height: 5.4rem;
   width: max-content;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .main-heading::before {
   position: absolute;
   white-space: nowrap;
-  bottom: 4.5rem;
+  bottom: 2.4rem;
   right: 0;
   content: "";
   color: var(--clr-accent);
   font-size: 16px;
   font-weight: var(--fw-light);
   text-align: center;
-  line-height: 2.2rem;
 }
 
 @media(max-width: 768px) {
   .main-heading {
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 24.2px;
-    margin-bottom: 2rem;
   }
 
   .main-heading::before {
-    font-size: 1.2rem;
-    bottom: 1.8rem;
+    font-size: 10px;
+    bottom: 1rem;
   }
 }

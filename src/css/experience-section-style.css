@@ -12,7 +12,6 @@
     inset: 0;
 }
 
-
 .experience-section {
     padding: 50px 0;
     position: relative;
@@ -24,11 +23,10 @@
     gap: 40px;
 }
 
-.experience-section .card .exp-title{
+.experience-section .card .exp-title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    font-weight: var(--fw-semibold);
     line-height: 22px;
     position: relative;
 }
@@ -43,17 +41,16 @@
 }
 
 .experience-section .card .exp-title h3 {
-    font-size: 3rem;
+    font-size: 30px;
     text-transform: capitalize;
 }
 
 .experience-section .card .exp-title p {
-    font-size: 2.4rem;
+    font-size: 22px;
 }
 
 .experience-section .card .exp-info p {
     font-weight: var(--fw-light);
-    font-size: 1.6rem;
     line-height: 22px;
 }
 
@@ -61,7 +58,6 @@
     color: var(--clr-accent);
     text-decoration: underline;
     font-weight: var(--fw-base);
-    font-size: 1.6rem;
     line-height: 19.36px;
     cursor: pointer;
     white-space: nowrap;
@@ -77,14 +73,14 @@
     }
 
     .experience-section .card .exp-title h3 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .experience-section .card .exp-title p {
-        font-size: 1.6rem;
+        font-size: 16px;
     }
 
     .experience-section .card .exp-info p {
-        font-size: 1.3rem;
+        font-size: 13px;
     }
 }
