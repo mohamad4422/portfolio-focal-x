@@ -1,5 +1,4 @@
-
-var swiper = new Swiper(".mySwiperclient", {
+new Swiper(".clients-swiper", {
   loop: true,
 
   pagination: {

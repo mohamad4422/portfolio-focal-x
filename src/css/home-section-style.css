@@ -9,7 +9,7 @@
 
 .home-section::before {
     content: "";
-    background-image: url(../imgs/background-3.png);
+    background-image: url(/imgs/background-3.png);
     background-position: center;
     background-size: cover;
     inset: 0;
