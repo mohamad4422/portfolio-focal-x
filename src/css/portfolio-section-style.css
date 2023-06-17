@@ -10,7 +10,6 @@
 
 .port-sec {
   padding: 50px 0;
-  height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -21,8 +20,11 @@
 
 .port-sec .port-redu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  row-gap: 20px;
 }
 
 .port-sec .port-redu .redu {
@@ -30,11 +32,28 @@
   cursor: pointer;
   text-transform: capitalize;
   opacity: 70%;
+  transition: .3s;
+  text-align: start;
+  position: relative;
+}
+
+.port-sec .port-redu .redu:hover {
+  opacity: 100%;
 }
 
 .port-sec .port-redu .redu.active {
   opacity: 100%;
-  position: relative;
+}
+
+.port-sec .port-redu .redu::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--clr-accent);
+  bottom: -5px;
+  left: 0;
+  transition: .3s;
 }
 
 .port-sec .port-redu .redu.active::after {
@@ -48,8 +67,6 @@
 }
 
 .port-sec .swiper {
-  /* overflow: visible !important; */
-  /* width: 1200px; */
   margin-top: 85px;
 }
 
@@ -79,6 +96,8 @@
   background-color: var(--clr-neutral-300);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   align-items: center;
   padding: 16px;
 }
@@ -93,29 +112,34 @@
   .port-sec .d-none-mobile {
     display: none !important;
   }
+
+  .port-sec .swiper-slide {
+    font-size: 14px;
+  }
+
+  .port-sec .port-redu .redu {
+    font-size: 12px;
+  }
+
+  .port-sec .swiper {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 520px) {
+  .port-sec .port-redu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .port-sec .port-redu .redu {
+    white-space: nowrap;
+  }
 }
 
 .portfolio-contanier {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .port-sec .portfolio-contanier {
-    width: 750px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .port-sec .portfolio-contanier {
-    width: 950px;
-  }
-}
-
-@media (min-width: 1300px) {
-  .port-sec .portfolio-contanier {
-    width: 1250px;
-  }
 }

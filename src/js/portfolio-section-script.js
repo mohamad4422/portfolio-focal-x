@@ -11,7 +11,7 @@ new Swiper(".portfolio-swiper", {
 		800: {
 			slidesPerView: 2,
 		},
-		1100: {
+		1250: {
 			slidesPerView: 3,
 		},
 	},
@@ -20,3 +20,12 @@ new Swiper(".portfolio-swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+
+const reduces = document.querySelectorAll(".port-sec .port-redu .redu");
+
+reduces.forEach(redu => {
+	redu.addEventListener("click", () => {
+		reduces.forEach(r => r.classList.remove("active"));
+		redu.classList.add("active");
+	})
+})
