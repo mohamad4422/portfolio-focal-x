@@ -12,11 +12,6 @@
     inset: 0;
 }
 
-.experience-section {
-    padding: 50px 0;
-    position: relative;
-}
-
 .experience-section .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));

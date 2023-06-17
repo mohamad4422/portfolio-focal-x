@@ -1,9 +1,8 @@
-.clients {
-    padding: 50px 0;
-    position: relative;
+.clients-section {
+    padding-top: 80px;
 }
 
-.clients::before {
+.clients-section::before {
     content: "";
     background-image: url(/imgs/background-2.png);
     background-size: cover;
@@ -13,26 +12,16 @@
     inset: 0;
 }
 
-.clients .main-heading::before {
+.clients-section .main-heading::before {
     content: "+50";
 }
 
-.clients .swiper {
-    height: 30vh;
-}
-
-
-.clients .swiper .swiper-button-next,
-.clients .swiper .swiper-button-prev { 
-    top: 173px;
-}
-
-.clients .swiper .swiper-slide {
+.clients-section .clients-swiper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clients .swiper .swiper-slide img {
+.clients-section .clients-swiper .swiper-slide img {
     width: 150px;
 }
