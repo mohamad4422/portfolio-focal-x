@@ -4,7 +4,7 @@
 
 .experience-section::before {
     content: "";
-    background-image: url(./../imgs/background-2.png);
+    background-image: url(/imgs/background-2.png);
     background-size: cover;
     position: absolute;
     opacity: 0.2;

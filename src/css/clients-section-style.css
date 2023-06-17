@@ -5,7 +5,7 @@
 
 .clients::before {
     content: "";
-    background-image: url(./../imgs/background-2.png);
+    background-image: url(/imgs/background-2.png);
     background-size: cover;
     position: absolute;
     opacity: 0.2;
@@ -21,6 +21,12 @@
     height: 30vh;
 }
 
+
+.clients .swiper .swiper-button-next,
+.clients .swiper .swiper-button-prev { 
+    top: 173px;
+}
+
 .clients .swiper .swiper-slide {
     display: flex;
     justify-content: center;
@@ -29,30 +35,4 @@
 
 .clients .swiper .swiper-slide img {
     width: 150px;
-}
-
-.clients .swiper .swiper-button-next,
-.swiper-button-prev {
-    --swiper-navigation-size: 13px;
-
-    top: 173px;
-    width: calc(var(--swiper-navigation-size) / 44 * 1300) !important;
-    color: var(--clr-accent);
-}
-
-.clients .swiper .swiper-pagination-bullet {
-    border: 2px solid var(--clr-accent);
-    width: 10px;
-    height: 10px;
-}
-
-.clients .swiper .swiper-pagination-bullet-active {
-    background-color: var(--clr-accent);
-}
-
-@media (max-width: 768px) {
-    .clients .swiper .swiper-button-next,
-    .swiper-button-prev {
-        display: none;
-    }
 }
