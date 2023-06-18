@@ -1,0 +1,27 @@
+.clients-section {
+    padding-top: 80px;
+}
+
+.clients-section::before {
+    content: "";
+    background-image: url(/imgs/background-2.png);
+    background-size: cover;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    inset: 0;
+}
+
+.clients-section .main-heading::before {
+    content: "+50";
+}
+
+.clients-section .clients-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-section .clients-swiper .swiper-slide img {
+    width: 150px;
+}
