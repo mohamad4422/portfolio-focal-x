@@ -6,7 +6,8 @@
 
 		<!-- start styles -->
 		<link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/main-style.css" />
+		<link rel="stylesheet" href="/css/navbar-style.css" />
 		<link rel="stylesheet" href="/css/home-section-style.css" />
 		<link rel="stylesheet" href="/css/experience-section-style.css" />
 		<link rel="stylesheet" href="/css/clients-section-style.css" />
@@ -21,44 +22,75 @@
 		<title>Portfolio | Alaa Darwish</title>
 	</head>
 	<body>
-    
-    <!-- start nav -->
-    <nav>
-      <div class="nav-container">
-        <div class="logo-nav d-none-nav"><img src="./imgs/white-logo.png" alt=""></div>
-        <div class="response-in-mobile">
-          <div class="hidden-menu-nav d-block-nav">
-            <span class="st" id="st1"></span>
-            <span class="st" id="st2"></span>
-            <span class="st" id="st3"></span>
-          </div>
-          
-        </div>
-        <div class="links-nav">
-          <ul class="links-list-nav d-none-nav">
-            <li class="link-nav active-nav"><a href="">Home</a></li>
-            <li class="link-nav"><a href="">Experience</a></li>
-            <li class="link-nav"><a href="">Achievement</a></li>
-            <li class="link-nav"><a href="">Videos</a></li>
-            <li class="link-nav"><a href="">Portfolio</a></li>
-            <li class="link-nav"><a href="">Biography</a></li>
-            <li class="link-nav"><a href="">Let’s Talk</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="res">
-      <ul class="links-list-nav-mobile">
-        <li class="link-nav-mob"><a href="">Portfolio</a></li>
-        <li class="link-nav-mob"><a href="">Experience</a></li>
-        <li class="link-nav-mob"><a href="">Achievement</a></li>
-        <li class="link-nav-mob"><a href="">Videos</a></li>
-        <li class="link-nav-mob active-mobile"><a href="">Biography</a></li>
-        <li class="link-nav-mob"><a href="">Let’s Talk</a></li>
-      </ul>
-    </div>
-    <!-- end nav -->
-    
+		<header>
+			<!-- start header -->
+			<nav>
+				<div class="nav-container">
+					<div class="logo-nav d-none-nav">
+						<img src="./imgs/white-logo.png" alt="logo" />
+					</div>
+					<div class="response-in-mobile">
+						<div class="hidden-menu-nav d-block-nav">
+							<span class="st" id="st1"></span>
+							<span class="st" id="st2"></span>
+							<span class="st" id="st3"></span>
+						</div>
+					</div>
+					<div class="links-nav">
+						<ul class="links-list-nav d-none-nav">
+							<li class="link-nav active-nav">
+								<a href="#home-section">Home</a>
+							</li>
+							<li class="link-nav">
+								<a href="#experience-section">Experience</a>
+							</li>
+							<li class="link-nav">
+								<a href="#achievement-section">Achievement</a>
+							</li>
+							<li class="link-nav">
+								<a href="#videos-section">Videos</a>
+							</li>
+							<li class="link-nav">
+								<a href="#portfolio-section">Portfolio</a>
+							</li>
+							<li class="link-nav">
+								<a href="#biography-section">Biography</a>
+							</li>
+							<li class="link-nav">
+								<a href="#lets-talk-section">Let&CloseCurlyQuote;s Talk</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="res">
+				<ul class="links-list-nav-mobile">
+					<li class="link-nav-mob active-mobile">
+						<a href="#home-section">Home</a>
+					</li>
+					<li class="link-nav-mob">
+						<a href="#experience-section">Experience</a>
+					</li>
+					<li class="link-nav-mob">
+						<a href="#achievement-section">Achievement</a>
+					</li>
+					<li class="link-nav-mob">
+						<a href="#videos-section">Videos</a>
+					</li>
+					<li class="link-nav-mob">
+						<a href="#portfolio-section">Portfolio</a>
+					</li>
+					<li class="link-nav-mob">
+						<a href="#biography-section">Biography</a>
+					</li>
+					<li class="link-nav-mob">
+						<a href="#lets-talk-section">Let&CloseCurlyQuote;s Talk</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!-- end header -->
+
 		<!-- start home section -->
 		<section id="home-section" class="home-section">
 			<img src="./imgs/white-logo.png" alt="logo img" class="home-logo-img" />
@@ -639,8 +671,8 @@
 		<!-- end let's talk section -->
 
 		<script type="module" src="/js/swiper-bundle.min.js"></script>
-		<script type="module" src="/js/main.js"></script>
-    <script type="module" src="./js/nav.js"></script>
+		<script type="module" src="/js/main-script.js"></script>
+		<script type="module" src="/js/navbar-script.js"></script>
 		<script type="module" src="/js/specialized-in-section-script.js"></script>
 		<script type="module" src="/js/clients-section-script.js"></script>
 		<script type="module" src="/js/portfolio-section-script.js"></script>

@@ -40,6 +40,10 @@
   font-family: var(--font-family);
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   background-color: var(--clr-background);
   color: var(--clr-primary);

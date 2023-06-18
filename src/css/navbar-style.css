@@ -1,11 +1,12 @@
-@import './main.css';
 nav {
     background-color: transparent;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
+    transition: 0.3s;
 }
+
 .nav-container {
     position: relative;
     height: 100px;
@@ -17,24 +18,30 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 .nav-container .logo-nav img{
     width: 65px;
     height: 40px;
 }
+
 .links-list-nav {
     list-style: none;
     display: flex;
     align-items: center;
 }
+
 .links-list-nav .link-nav {
     margin-left: 40px;
+    white-space: nowrap;
 }
+
 .links-list-nav .link-nav a {
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .links-list-nav .link-nav.active-nav a {
     color: white;
     border-bottom: 2px solid var(--clr-accent);
@@ -48,15 +55,19 @@ nav {
     border-radius: 1px;
     transition-duration: .3s;
 }
+
 .st#st1 {
     width: 40px;
 }
+
 .st#st2 {
     width: 32px;
 }
+
 .st#st3 {
     width: 24px;
 }
+
 .response-in-mobile {
     width: 100%;
     height: 100px;
@@ -65,6 +76,7 @@ nav {
     position: relative;
     overflow: visible;
 }
+
 .hidden-menu-nav {
     display: none;
     position: absolute;
@@ -74,6 +86,7 @@ nav {
     justify-content: center;
     cursor: pointer;
 }
+
 .links-list-nav-mobile {
     transform: translateX(100%);
     transition-duration: .5s;
@@ -87,42 +100,54 @@ nav {
     z-index: 99;
     padding: 100px 0 0;
 }
+
 .link-nav-mob {
     margin: 0 auto;
     text-align: center;
     width: 200px;
     margin-bottom: 40px;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
+
 .link-nav-mob a {
     text-decoration: none;
-    color: white;
+    color: var(--clr-primary);
     font-weight: 600;
     font-size: 20px;
-    padding-bottom: 3px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
 }
+
 .link-nav-mob:hover a {
     color: var(--clr-accent);
 }
+
 .link-nav-mob:hover {
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: var(--clr-primary-low-opacity);
     backdrop-filter: blur(10px);
 }
+
 .link-nav-mob.active-mobile a {
     color: var(--clr-accent);
 }
+
 .trans-0{
     transform: translateX(0);
 }
+
 .w-40 {
     width: 40px !important;
 }
-@media (max-width:1000px) {
+
+@media (max-width: 1100px) {
     .d-none-nav {
         display: none;
     }
+
     .d-block-nav {
         display: flex;
     }
